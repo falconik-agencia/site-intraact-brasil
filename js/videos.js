@@ -229,7 +229,7 @@ async function displayVideos() {
 
 
         // --------------------------------------------------------
-        // Adiciona card ao container
+        // Adiciona card ao container principal
         // --------------------------------------------------------
 
         container.appendChild(card);
