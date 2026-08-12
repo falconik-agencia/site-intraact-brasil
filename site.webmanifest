@@ -1,0 +1,14 @@
+{
+  "name": "IntraAct Brasil",
+  "short_name": "IntraAct",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#0A3A74",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

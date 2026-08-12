@@ -1,0 +1,2630 @@
+/* ========================================================================
+   HERO — MATEMÁTICA
+   ======================================================================== */
+
+.hero-math {
+    background-color: var(--purple-100);
+    padding: 45px 0;
+}
+
+/* ---------- Divisão interna ---------- */
+
+.hero-math__inner {
+    position: relative;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.hero-math__media {
+    border-radius: 30px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.hero-math__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- Conteúdo ---------- */
+
+.hero-math__content {
+    position: absolute;
+    inset: 0 auto 0 0;
+    height: 100%;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: var(--container-padding);
+    padding-right: 40px;
+}
+
+.hero-math__title {
+    font-family: var(--font-primary);
+    font-weight: var(--fw-extrabold);
+    font-size: 46px;
+    line-height: 1.25;
+    color: var(--orange-700);
+
+    margin: 0 0 24px;
+}
+
+.hero-math__subtitle {
+    font-family: var(--font-primary);
+    font-weight: var(--fw-medium);
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000;
+
+    max-width: 46ch;
+    margin: 0;
+}
+
+
+/* --------------------------------------------------------------------------
+   RESPONSIVO
+   -------------------------------------------------------------------------- */
+
+/* ---------- 1600 ---------- */
+@media (max-width: 1600px) {
+    .hero-math__content {
+        max-width: 620px;
+    }
+    .hero-math__title {
+        font-size: 42px;
+    }
+}
+
+/* ---------- 1440 ---------- */
+@media (max-width: 1440px) {
+    .hero-math {
+        padding: 40px 0;
+    }
+    .hero-math__content {
+        max-width: 560px;
+    }
+    .hero-math__title {
+        font-size: 38px;
+    }
+    .hero-math__subtitle {
+        font-size: 22px;
+    }
+}
+
+/* ---------- 1366 ---------- */
+@media (max-width: 1366px) {
+    .hero-math__content {
+        max-width: 520px;
+    }
+    .hero-math__title {
+        font-size: 36px;
+    }
+    .hero-math__subtitle {
+        font-size: 20px;
+    }
+}
+
+/* ---------- 1280 ---------- */
+@media (max-width: 1280px) {
+    .hero-math {
+        padding: 35px 0;
+    }
+    .hero-math__content {
+        max-width: 460px;
+        padding-right: 30px;
+    }
+    .hero-math__title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .hero-math__subtitle {
+        font-size: 18px;
+    }
+}
+
+/* ---------- 1024 ---------- */
+@media (max-width: 1024px) {
+    .hero-math__content {
+        max-width: 400px;
+        padding-right: 24px;
+    }
+    .hero-math__title {
+        font-size: 30px;
+    }
+    .hero-math__subtitle {
+        font-size: 17px;
+    }
+}
+
+/* ---------- 768 ---------- */
+@media (max-width: 768px) {
+    .hero-math {
+        padding: 32px var(--container-padding);
+    }
+    .hero-math__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .hero-math__content {
+        position: static;
+        height: auto;
+        max-width: none;
+        padding: 0;
+
+        align-items: center;
+        text-align: center;
+    }
+    .hero-math__media {
+        border-radius: 20px;
+    }
+    .hero-math__title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .hero-math__title br {
+        display: none;
+    }
+    .hero-math__subtitle {
+        font-size: 16px;
+        max-width: 660px;
+    }
+}
+
+/* ---------- 576 ---------- */
+@media (max-width: 576px) {
+    .hero-math {
+        padding: 24px var(--container-padding);
+    }
+    .hero-math__inner {
+        gap: 20px;
+    }
+    .hero-math__media {
+        border-radius: 16px;
+    }
+    .hero-math__title {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    .hero-math__subtitle {
+        font-size: 15px;
+        max-width: 500px;
+    }
+}
+
+/* ---------- 480 ---------- */
+@media (max-width: 480px) {
+    .hero-math {
+        padding: 20px var(--container-padding);
+    }
+    .hero-math__inner {
+        gap: 16px;
+    }
+    .hero-math__media {
+        border-radius: 14px;
+    }
+    .hero-math__title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .hero-math__subtitle {
+        font-size: 14px;
+    }
+}
+
+/* ---------- 360 ---------- */
+@media (max-width: 360px) {
+    .hero-math__inner {
+        gap: 14px;
+    }
+    .hero-math__media {
+        border-radius: 12px;
+    }
+    .hero-math__title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .hero-math__subtitle {
+        font-size: 13px;
+    }
+}
+
+/* ---------- 320 ---------- */
+@media (max-width: 320px) {
+    .hero-math__title {
+        font-size: 18px;
+    }
+    .hero-math__subtitle {
+        font-size: 13px;
+    }
+}
+
+/* ========================================================================
+   DESAFIOS — OS DESAFIOS DA EDUCAÇÃO NO BRASIL
+   ======================================================================== */
+
+.desafios-math {
+    background-color: var(--purple-100);
+    padding: 80px var(--container-padding);
+}
+
+
+/* ---------- Divisão interna ---------- */
+
+.desafios-math__inner {
+
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 64px;
+}
+
+
+/* --------------------------------------------------------------------------
+   COLUNA ESQUERDA
+   -------------------------------------------------------------------------- */
+
+.desafios-math__left {
+
+    flex: 1;
+    max-width: 550px;
+}
+
+
+.desafios-math__eyebrow {
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-semibold);
+
+    font-size: 24px;
+    line-height: 1.2;
+
+    color: var(--purple-900);
+
+    margin: 0;
+}
+
+
+.desafios-math__title {
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-extrabold);
+
+    font-size: 42px;
+    line-height: 1.15;
+
+    color: var(--purple-900);
+
+    margin: 4px 0 24px;
+}
+
+
+.desafios-math__text {
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-regular);
+
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: var(--neutral-700);
+
+    margin: 0;
+}
+
+
+.desafios-math__photo {
+
+    width: 550px;
+    max-width: 100%;
+
+    height: 370px;
+
+    border-radius: 30px;
+    overflow: hidden;
+
+    margin-top: 32px;
+}
+
+
+.desafios-math__photo img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* --------------------------------------------------------------------------
+   GRID DE CARDS
+   -------------------------------------------------------------------------- */
+
+
+.desafios-math__cards {
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 280px);
+
+    gap: 32px;
+}
+
+
+.desafios-math__card {
+
+    width: 280px;
+    min-height: 280px;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    background-color: var(--neutral-0);
+
+    border: 2px solid var(--purple-100);
+
+    padding: 32px 24px;
+
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.desafios-math__card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 32px rgba(47,52,144,.08);
+}
+
+
+
+.desafios-math__card-icon {
+
+    flex-shrink: 0;
+
+    width: 66px;
+    height: 66px;
+
+    border-radius: 50%;
+
+    background-color: #FFF9EA;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+
+.desafios-math__card-icon img {
+
+    width: 40px;
+    height: 40px;
+
+    display: block;
+}
+
+
+.desafios-math__card-title {
+
+    font-family: var(--font-primary);
+
+    font-weight: var(--fw-bold);
+
+    font-size: 24px;
+    line-height: 1.25;
+
+    color: var(--orange-700);
+
+    margin: 0 0 12px;
+}
+
+
+.desafios-math__card-text {
+
+    font-family: var(--font-primary);
+
+    font-weight: var(--fw-regular);
+
+    font-size: 15px;
+    line-height: 1.4;
+
+    color: #000;
+
+    margin: 0;
+}
+
+
+
+/* --------------------------------------------------------------------------
+   RESPONSIVO
+   -------------------------------------------------------------------------- */
+
+/* ---------- 1600 ---------- */
+@media (max-width: 1600px) {
+
+    .desafios-math__inner {
+        gap: 48px;
+    }
+
+}
+
+
+/* ---------- 1440 ---------- */
+@media (max-width: 1440px) {
+
+    .desafios-math__title {
+        font-size: 38px;
+    }
+
+    .desafios-math__cards {
+        gap: 28px;
+        grid-template-columns: repeat(2, 260px);
+    }
+
+    .desafios-math__card {
+        width: 260px;
+    }
+
+}
+
+
+/* ---------- 1366 ---------- */
+@media (max-width: 1366px) {
+
+    .desafios-math {
+        padding: 72px var(--container-padding);
+    }
+
+    .desafios-math__title {
+        font-size: 34px;
+    }
+
+    .desafios-math__text {
+        font-size: 18px;
+    }
+
+    .desafios-math__cards {
+        gap: 24px;
+        grid-template-columns: repeat(2, 240px);
+    }
+
+    .desafios-math__card {
+        width: 240px;
+        padding: 28px 20px;
+    }
+
+}
+
+
+/* ---------- 1280 ---------- */
+@media (max-width: 1280px) {
+
+    .desafios-math {
+        padding: 64px var(--container-padding);
+    }
+
+    .desafios-math__inner {
+        gap: 32px;
+    }
+
+    .desafios-math__cards {
+        grid-template-columns: repeat(2, 220px);
+    }
+
+    .desafios-math__card {
+        width: 220px;
+        min-height: 260px;
+    }
+
+}
+
+
+/* ---------- 1024 ---------- */
+@media (max-width: 1024px) {
+
+    .desafios-math {
+        padding: 56px var(--container-padding);
+    }
+
+    .desafios-math__inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .desafios-math__left {
+        max-width: none;
+    }
+
+    .desafios-math__photo {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 550 / 370;
+        margin-top: 24px;
+    }
+
+    .desafios-math__cards {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .desafios-math__card {
+        width: 100%;
+    }
+
+}
+
+
+/* ---------- 768 ---------- */
+@media (max-width: 768px) {
+
+    .desafios-math__card-title br {
+        display: none;
+    }
+
+    .desafios-math {
+        padding: 48px var(--container-padding);
+    }
+
+    .desafios-math__inner {
+        gap: 32px;
+    }
+
+    .desafios-math__title {
+        font-size: 30px;
+        margin: 4px 0 16px;
+    }
+
+    .desafios-math__text {
+        font-size: 17px;
+    }
+
+    .desafios-math__cards {
+        gap: 20px;
+    }
+
+    .desafios-math__card {
+        padding: 24px 20px;
+    }
+
+}
+
+
+/* ---------- 576 ---------- */
+@media (max-width: 576px) {
+
+    .desafios-math {
+        padding: 40px var(--container-padding);
+    }
+
+    .desafios-math__eyebrow {
+        font-size: 20px;
+    }
+
+    .desafios-math__title {
+        font-size: 26px;
+    }
+
+    .desafios-math__text {
+        font-size: 16px;
+    }
+
+    .desafios-math__cards {
+        gap: 16px;
+        grid-template-columns: 1fr;
+    }
+
+    .desafios-math__card {
+        min-height: 0;
+        padding: 24px;
+    }
+
+}
+
+
+/* ---------- 480 ---------- */
+@media (max-width: 480px) {
+
+    .desafios-math {
+        padding: 32px var(--container-padding);
+    }
+
+    .desafios-math__title {
+        font-size: 24px;
+        margin: 4px 0 12px;
+    }
+
+    .desafios-math__card-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 16px;
+    }
+
+    .desafios-math__card-icon img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .desafios-math__card-title {
+        font-size: 20px;
+    }
+
+}
+
+
+/* ---------- 360 ---------- */
+@media (max-width: 360px) {
+
+    .desafios-math__title {
+        font-size: 22px;
+    }
+
+    .desafios-math__text {
+        font-size: 15px;
+    }
+
+    .desafios-math__card {
+        padding: 20px;
+    }
+
+}
+
+
+/* ---------- 320 ---------- */
+@media (max-width: 320px) {
+
+    .desafios-math {
+        padding: 24px var(--container-padding);
+    }
+
+    .desafios-math__card-title {
+        font-size: 18px;
+    }
+
+    .desafios-math__card-text {
+        font-size: 14px;
+    }
+
+}
+
+/* ========================================================================
+   MÉTODO — MATEMÁTICA
+   ======================================================================== */
+
+.metodo-math {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 600px;
+
+    height: calc(100dvh - var(--header-height));
+
+    background-color: var(--neutral-0);
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+
+/* ---------- Divisão interna ---------- */
+
+
+.metodo-math__body {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 0;
+
+}
+
+
+.metodo-math__inner {
+
+    width: 100%;
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding: 0 var(--container-padding);
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 48px;
+
+}
+
+
+/* --------------------------------------------------------------------------
+   CONTEÚDO
+   -------------------------------------------------------------------------- */
+
+
+.metodo-math__content {
+
+    flex: 1;
+
+    max-width: 560px;
+
+}
+
+
+.metodo-math__title {
+
+    font-family: var(--font-primary);
+
+    font-weight: var(--fw-extrabold);
+
+    font-size: 44px;
+
+    line-height: 1.25;
+
+    color: var(--orange-700);
+
+    margin: 24px 0;
+
+}
+
+
+.metodo-math__text {
+
+    font-family: var(--font-primary);
+
+    font-weight: var(--fw-regular);
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    color: #000;
+
+    max-width: 46ch;
+
+    margin:0;
+
+}
+
+
+
+/* --------------------------------------------------------------------------
+   IMAGEM
+   -------------------------------------------------------------------------- */
+
+
+.metodo-math__media {
+
+    flex-shrink:0;
+
+    width:620px;
+
+    max-width:50%;
+
+}
+
+
+.metodo-math__media img {
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+
+/* --------------------------------------------------------------------------
+   RESPONSIVO
+   -------------------------------------------------------------------------- */
+
+/* ---------- 1600 ---------- */
+@media (max-width: 1600px) {
+
+    .metodo-math__media {
+        width: 560px;
+    }
+
+}
+
+
+/* ---------- 1440 ---------- */
+@media (max-width: 1440px) {
+
+    .metodo-math__media {
+        width: 520px;
+    }
+
+    .metodo-math__title {
+        font-size: 40px;
+    }
+
+}
+
+
+/* ---------- 1366 ---------- */
+@media (max-width: 1366px) {
+
+    .metodo-math__inner {
+        gap: 36px;
+    }
+
+    .metodo-math__media {
+        width: 470px;
+    }
+
+    .metodo-math__title {
+        font-size: 36px;
+    }
+
+    .metodo-math__text {
+        font-size: 18px;
+    }
+
+}
+
+
+/* ---------- 1280 ---------- */
+@media (max-width: 1280px) {
+
+    .metodo-math {
+        height: auto;
+        min-height: 600px;
+    }
+
+    .metodo-math__media {
+        width: 420px;
+    }
+
+    .metodo-math__title {
+        font-size: 34px;
+    }
+
+}
+
+
+/* ---------- 1024 ---------- */
+@media (max-width: 1024px) {
+
+    .metodo-math {
+        height: auto;
+        min-height: 0;
+    }
+
+    .metodo-math__body {
+        padding: 64px 0;
+    }
+
+    .metodo-math__inner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .metodo-math__content {
+        max-width: none;
+    }
+
+    .metodo-math__media {
+        order: -1;
+        max-width: 100%;
+        width: 100%;
+    }
+
+}
+
+
+/* ---------- 768 ---------- */
+@media (max-width: 768px) {
+
+    .metodo-math__body {
+        padding: 48px 0;
+    }
+
+    .metodo-math__title {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .metodo-math__text {
+        font-size: 18px;
+    }
+
+}
+
+
+/* ---------- 576 ---------- */
+@media (max-width: 576px) {
+
+    .metodo-math__body {
+        padding: 40px 0;
+    }
+
+    .metodo-math__title {
+        font-size: 26px;
+        margin: 16px 0;
+    }
+
+    .metodo-math__text {
+        font-size: 17px;
+    }
+
+}
+
+
+/* ---------- 480 ---------- */
+@media (max-width: 480px) {
+
+    .metodo-math__body {
+        padding: 32px 0;
+    }
+
+    .metodo-math__title {
+        font-size: 24px;
+    }
+
+}
+
+
+/* ---------- 360 ---------- */
+@media (max-width: 360px) {
+
+    .metodo-math__title {
+        font-size: 22px;
+    }
+
+    .metodo-math__text {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ---------- 320 ---------- */
+@media (max-width: 320px) {
+
+    .metodo-math__body {
+        padding: 24px 0;
+    }
+
+    .metodo-math__title {
+        font-size: 20px;
+    }
+
+}
+
+/* ========================================================================
+   FAIXA DE 4 CORES
+   ======================================================================== */
+
+.destaque__bars {
+
+    display: flex;
+
+    width: 100vw;
+
+    margin-left: calc(50% - 50vw);
+
+}
+
+
+/* ---------- Divisão interna ---------- */
+
+
+.destaque__bar {
+
+    flex: 1;
+
+    height: 20px;
+
+}
+
+
+.destaque__bar--orange {
+    background: var(--orange-500);
+}
+
+
+.destaque__bar--teal {
+    background: var(--teal-500);
+}
+
+
+.destaque__bar--brown {
+    background: var(--orange-700);
+}
+
+
+.destaque__bar--green {
+    background: var(--green-500);
+}
+
+/* ========================================================================
+   COMO FUNCIONA — MÉTODO NEUROCIENTÍFICO
+   ======================================================================== */
+
+.funciona-math {
+
+    background-color: var(--orange-100);
+
+    padding: 80px var(--container-padding);
+
+}
+
+
+/* ---------- Divisão interna ---------- */
+
+
+.funciona-math__inner {
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 64px;
+
+}
+
+
+
+/* --------------------------------------------------------------------------
+   METADE ESQUERDA
+   -------------------------------------------------------------------------- */
+
+
+.funciona-math__left {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
+.funciona-math__title {
+
+    font-family: var(--font-primary);
+
+    font-weight: var(--fw-extrabold);
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    color: var(--orange-700);
+
+    margin: 20px 0;
+
+}
+
+
+.funciona-math__text {
+
+    font-family: var(--font-primary);
+
+    font-weight: var(--fw-regular);
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    color: #000;
+
+    margin: 0;
+
+}
+
+
+.funciona-math__photo {
+
+    width: 550px;
+
+    max-width:100%;
+
+    height:370px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-top:32px;
+
+}
+
+
+.funciona-math__photo img {
+
+    display:block;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+/* --------------------------------------------------------------------------
+   GRID DE CARDS
+   -------------------------------------------------------------------------- */
+
+
+.funciona-math__cards {
+
+    flex:1;
+
+    min-width:0;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+
+.funciona-math__card {
+
+    box-sizing:border-box;
+
+    border-radius:16px;
+
+    background-color:var(--neutral-0);
+
+    border:1px solid var(--orange-500);
+
+    padding:32px 24px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+
+}
+
+
+.funciona-math__card:hover {
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 32px rgba(47,52,144,.08);
+
+}
+
+
+
+.funciona-math__card-icon {
+
+    display:block;
+
+    height:56px;
+
+    width:auto;
+
+    max-width:100%;
+
+    margin-bottom:20px;
+
+}
+
+
+.funciona-math__card-title {
+
+    font-family:var(--font-primary);
+
+    font-weight:var(--fw-bold);
+
+    font-size:24px;
+
+    line-height:1.25;
+
+    color:var(--purple-700);
+
+    margin:0 0 12px;
+
+}
+
+
+.funciona-math__card-text {
+
+    font-family:var(--font-primary);
+
+    font-weight:var(--fw-regular);
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    color:#000;
+
+    margin:0;
+
+}
+
+
+
+/* --------------------------------------------------------------------------
+   RESPONSIVO
+   -------------------------------------------------------------------------- */
+
+/* ---------- 1600 ---------- */
+@media (max-width: 1600px) {
+
+    .funciona-math__inner {
+        gap: 48px;
+    }
+
+}
+
+
+/* ---------- 1440 ---------- */
+@media (max-width: 1440px) {
+
+    .funciona-math__title {
+        font-size: 36px;
+    }
+
+    .funciona-math__photo {
+        width: 500px;
+        height: 340px;
+    }
+
+}
+
+
+/* ---------- 1366 ---------- */
+@media (max-width: 1366px) {
+
+    .funciona-math__inner {
+        gap: 36px;
+    }
+
+    .funciona-math__title {
+        font-size: 34px;
+    }
+
+    .funciona-math__text {
+        font-size: 18px;
+    }
+
+    .funciona-math__photo {
+        width: 460px;
+        height: 310px;
+    }
+
+    .funciona-math__card {
+        padding: 28px 20px;
+    }
+
+    .funciona-math__card-title {
+        font-size: 21px;
+    }
+
+}
+
+
+/* ---------- 1280 ---------- */
+@media (max-width: 1280px) {
+
+    .funciona-math {
+        padding: 64px var(--container-padding);
+    }
+
+    .funciona-math__cards {
+        gap: 18px;
+    }
+
+    .funciona-math__card-text {
+        font-size: 15px;
+    }
+
+}
+
+
+/* ---------- 1024 ---------- */
+@media (max-width: 1024px) {
+
+    .funciona-math {
+        padding: 56px var(--container-padding);
+    }
+
+    .funciona-math__inner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    .funciona-math__photo {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 550 / 370;
+        margin-top: 24px;
+    }
+
+    .funciona-math__cards {
+        width: 100%;
+    }
+
+}
+
+
+/* ---------- 768 ---------- */
+@media (max-width: 768px) {
+
+    .funciona-math {
+        padding: 48px var(--container-padding);
+    }
+
+    .funciona-math__title {
+        font-size: 30px;
+        margin: 16px 0;
+    }
+
+    .funciona-math__text {
+        font-size: 17px;
+    }
+
+    .funciona-math__cards {
+        gap: 16px;
+    }
+
+}
+
+
+/* ---------- 576 ---------- */
+@media (max-width: 576px) {
+
+    .funciona-math {
+        padding: 40px var(--container-padding);
+    }
+
+    .funciona-math__title {
+        font-size: 26px;
+        margin: 12px 0;
+    }
+
+    .funciona-math__cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ---------- 480 ---------- */
+@media (max-width: 480px) {
+
+    .funciona-math {
+        padding: 32px var(--container-padding);
+    }
+
+    .funciona-math__title {
+        font-size: 24px;
+    }
+
+    .funciona-math__card {
+        padding: 24px 20px;
+    }
+
+    .funciona-math__card-icon {
+        height: 48px;
+        margin-bottom: 16px;
+    }
+
+}
+
+
+/* ---------- 360 ---------- */
+@media (max-width: 360px) {
+
+    .funciona-math__title {
+        font-size: 22px;
+    }
+
+    .funciona-math__text {
+        font-size: 16px;
+    }
+
+    .funciona-math__card-title {
+        font-size: 19px;
+    }
+
+}
+
+
+/* ---------- 320 ---------- */
+@media (max-width: 320px) {
+
+    .funciona-math {
+        padding: 24px var(--container-padding);
+    }
+
+    .funciona-math__card {
+        padding: 20px 16px;
+    }
+
+    .funciona-math__card-text {
+        font-size: 14px;
+    }
+
+}
+
+/* ==========================================================================
+   MATEMÁTICA — LIVROS DIDÁTICOS
+   ========================================================================== */
+
+.livros-matematica {
+    background: var(--neutral-0);
+    padding: 0;
+}
+
+
+/* ---------- Card / sangria ---------- */
+
+.livros-matematica__card {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+}
+
+
+/* ==========================================================================
+   FAIXA SUPERIOR
+   ========================================================================== */
+
+.livros-matematica__top {
+    background: var(--orange-700);
+    padding: 40px 0;
+}
+
+.livros-matematica__top-inner {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+
+    text-align: center;
+}
+
+.livros-matematica__title {
+    max-width: 1200px;
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-extrabold);
+    font-size: clamp(24px, 2.4vw, 34px);
+    line-height: 1.3;
+
+    color: var(--neutral-0);
+}
+
+
+/* ==========================================================================
+   CONTEÚDO
+   ========================================================================== */
+
+.livros-matematica__body {
+    background: var(--orange-100);
+    padding: 56px var(--container-padding);
+}
+
+.livros-matematica__body-inner {
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 48px;
+}
+
+
+/* ==========================================================================
+   LINHA PRINCIPAL
+   ========================================================================== */
+
+.livros-matematica__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+/* ==========================================================================
+   TEXTO
+   ========================================================================== */
+
+.livros-matematica__text {
+    flex: 1;
+    max-width: 340px;
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-regular);
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: var(--neutral-900);
+}
+
+
+/* ==========================================================================
+   MATEMÁTICA — LIVROS DIDÁTICOS
+   ========================================================================== */
+
+.livros-matematica {
+    background: var(--neutral-0);
+    padding: 0;
+}
+
+
+/* ---------- Card / sangria ---------- */
+
+.livros-matematica__card {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+}
+
+
+/* ==========================================================================
+   FAIXA SUPERIOR
+   ========================================================================== */
+
+.livros-matematica__top {
+    background: var(--orange-700);
+    padding: 40px 0;
+}
+
+.livros-matematica__top-inner {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+
+    text-align: center;
+}
+
+.livros-matematica__title {
+    max-width: 1200px;
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-extrabold);
+    font-size: clamp(24px, 2.4vw, 34px);
+    line-height: 1.3;
+
+    color: var(--neutral-0);
+}
+
+
+/* ==========================================================================
+   CONTEÚDO
+   ========================================================================== */
+
+.livros-matematica__body {
+    background: var(--orange-100);
+    padding: 56px var(--container-padding);
+}
+
+.livros-matematica__body-inner {
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 48px;
+}
+
+
+/* ==========================================================================
+   LINHA PRINCIPAL
+   ========================================================================== */
+
+.livros-matematica__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+/* ==========================================================================
+   TEXTO
+   ========================================================================== */
+
+.livros-matematica__text {
+    flex: 1;
+    max-width: 340px;
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-regular);
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: var(--neutral-900);
+}
+
+
+/* ==========================================================================
+   LIVROS DE MATEMÁTICA
+   ========================================================================== */
+
+.livros-matematica__image {
+    flex: 0 0 auto;
+
+    width: auto;
+    height: 320px;
+    max-width: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================================================
+   ÁREA DO LIVRO DO PROFESSOR
+   ========================================================================== */
+
+.livros-matematica__right {
+    flex: 1;
+
+    max-width: 340px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+}
+
+
+/* ---------- Divisor ---------- */
+
+.livros-matematica__divider {
+    flex: 0 0 auto;
+
+    width: 2px;
+    height: 300px;
+
+    background: var(--orange-500);
+}
+
+
+/* ==========================================================================
+   MATEMÁTICA — MATERIAIS DIDÁTICOS
+   ========================================================================== */
+
+.livros-matematica {
+    width: 100%;
+    background: var(--orange-100);
+    overflow: hidden;
+}
+
+
+/* ==========================================================================
+   CARD / CONTAINER PRINCIPAL
+   ========================================================================== */
+
+.livros-matematica__card {
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   FAIXA SUPERIOR
+   ========================================================================== */
+
+.livros-matematica__top {
+    width: 100%;
+    background: var(--orange-700);
+    padding: 34px 20px 38px;
+}
+
+.livros-matematica__top-inner {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 14px;
+
+    text-align: center;
+}
+
+.livros-matematica__title {
+    margin: 0;
+
+    max-width: 1100px;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-extrabold);
+    font-size: clamp(24px, 2.3vw, 34px);
+    line-height: 1.3;
+
+    color: var(--neutral-0);
+}
+
+
+/* ==========================================================================
+   CORPO
+   ========================================================================== */
+
+.livros-matematica__body {
+    width: 100%;
+
+    padding: 54px 20px 48px;
+}
+
+.livros-matematica__body-inner {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 48px;
+}
+
+
+/* ==========================================================================
+   LINHA PRINCIPAL
+
+   TEXTO | LIVROS | TEXTO PROFESSOR | LIVRO PROFESSOR
+   ========================================================================== */
+
+.livros-matematica__row {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(220px, 0.95fr)
+        minmax(360px, 1.65fr)
+        minmax(230px, 1fr)
+        minmax(150px, 0.75fr);
+
+    align-items: center;
+
+    column-gap: 28px;
+}
+
+
+/* ==========================================================================
+   TEXTO DA ESQUERDA
+   ========================================================================== */
+
+.livros-matematica__text {
+    width: 100%;
+    max-width: 300px;
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-regular);
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: var(--neutral-900);
+}
+
+.livros-matematica__text p {
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   LIVROS — IMAGEM ÚNICA
+   ========================================================================== */
+
+.livros-matematica__books {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+}
+
+.livros-matematica__image {
+    display: block;
+
+    width: auto;
+    height: 205px;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================================================
+   ÁREA DO PROFESSOR
+   ========================================================================== */
+
+.livros-matematica__right {
+    display: contents;
+}
+
+
+/* ==========================================================================
+   DIVISOR
+
+   Mantido caso exista no HTML antigo, mas não interfere na composição atual.
+   ========================================================================== */
+
+.livros-matematica__divider {
+    display: none;
+}
+
+
+/* ==========================================================================
+   TEXTO DO PROFESSOR
+   ========================================================================== */
+
+.livros-matematica__highlight {
+    width: 100%;
+    max-width: 280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   ÍCONE DO PROFESSOR
+   ========================================================================== */
+
+.livros-matematica__highlight-icon {
+    width: 68px;
+    height: 68px;
+
+    flex: 0 0 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--purple-800);
+}
+
+.livros-matematica__highlight-icon img {
+    display: block;
+
+    width: 34px;
+    height: 34px;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================================================
+   TÍTULO DO PROFESSOR
+   ========================================================================== */
+
+.livros-matematica__highlight-title {
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-bold);
+    font-size: 21px;
+    line-height: 1.3;
+
+    color: var(--purple-700);
+}
+
+
+/* ==========================================================================
+   TEXTO DO PROFESSOR
+   ========================================================================== */
+
+.livros-matematica__highlight-text {
+    width: 100%;
+    max-width: 260px;
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-regular);
+    font-size: 15px;
+    line-height: 1.55;
+
+    color: var(--neutral-900);
+}
+
+
+/* ==========================================================================
+   LIVRO DO PROFESSOR
+   ========================================================================== */
+
+.livros-matematica__professor-image {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+}
+
+.livros-matematica__highlight-image {
+    display: block;
+
+    width: auto;
+    height: 205px;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================================================
+   BANNER INFERIOR
+   ========================================================================== */
+
+.livros-matematica__banner {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 22px 34px;
+
+    background: var(--purple-900);
+
+    border-radius: var(--radius-lg);
+}
+
+
+/* ==========================================================================
+   INFORMAÇÕES DO BANNER
+   ========================================================================== */
+
+.livros-matematica__banner-info {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    min-width: 0;
+}
+
+
+/* ==========================================================================
+   ÍCONE DO BANNER
+   ========================================================================== */
+
+.livros-matematica__banner-icon {
+    width: 58px;
+    height: 58px;
+
+    flex: 0 0 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--neutral-0);
+}
+
+.livros-matematica__banner-icon img {
+    display: block;
+
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================================================
+   TÍTULO DO BANNER
+   ========================================================================== */
+
+.livros-matematica__banner-title {
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-extrabold);
+    font-size: 24px;
+    line-height: 1.3;
+
+    color: var(--neutral-0);
+}
+
+
+/* ==========================================================================
+   CTA DO BANNER
+   ========================================================================== */
+
+.livros-matematica__banner-cta {
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 48px;
+
+    padding: 0 24px;
+
+    border: 2px solid var(--neutral-0);
+    border-radius: 999px;
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-bold);
+    font-size: 14px;
+    line-height: 1;
+
+    color: var(--neutral-0);
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.livros-matematica__banner-cta:hover {
+    background: var(--neutral-0);
+    color: var(--purple-900);
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================================================
+   1440px
+   ========================================================================== */
+
+@media (max-width: 1440px) {
+
+    .livros-matematica__row {
+        grid-template-columns:
+            minmax(210px, 0.95fr)
+            minmax(340px, 1.6fr)
+            minmax(220px, 1fr)
+            minmax(145px, 0.7fr);
+
+        column-gap: 24px;
+    }
+
+    .livros-matematica__image,
+    .livros-matematica__highlight-image {
+        height: 200px;
+    }
+
+}
+
+
+/* ==========================================================================
+   1280px
+   ========================================================================== */
+
+@media (max-width: 1280px) {
+
+    .livros-matematica__body {
+        padding: 48px 20px;
+    }
+
+    .livros-matematica__row {
+        grid-template-columns:
+            210px
+            minmax(320px, 1.6fr)
+            220px
+            145px;
+
+        column-gap: 20px;
+    }
+
+    .livros-matematica__text {
+        max-width: 260px;
+
+        font-size: 15px;
+    }
+
+    .livros-matematica__image,
+    .livros-matematica__highlight-image {
+        height: 195px;
+    }
+
+    .livros-matematica__highlight {
+        max-width: 230px;
+    }
+
+    .livros-matematica__highlight-text {
+        max-width: 220px;
+    }
+
+    .livros-matematica__banner {
+        padding: 22px 28px;
+    }
+
+    .livros-matematica__banner-title {
+        font-size: 21px;
+    }
+
+}
+
+
+/* ==========================================================================
+   1024px
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+
+    .livros-matematica__body {
+        padding: 44px 20px;
+    }
+
+    /*
+       Tablet:
+       duas colunas para evitar que a composição fique apertada.
+    */
+
+    .livros-matematica__row {
+        display: grid;
+
+        grid-template-columns: 1fr 1.3fr;
+
+        row-gap: 40px;
+        column-gap: 32px;
+    }
+
+    .livros-matematica__text {
+        max-width: 400px;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .livros-matematica__books {
+        justify-content: center;
+    }
+
+    .livros-matematica__image {
+        height: 195px;
+    }
+
+    .livros-matematica__highlight {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .livros-matematica__highlight-text {
+        max-width: 300px;
+    }
+
+    .livros-matematica__highlight-image {
+        height: 195px;
+    }
+
+    .livros-matematica__banner {
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .livros-matematica__banner-info {
+        justify-content: center;
+    }
+
+}
+
+
+/* ==========================================================================
+   768px
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+    .livros-matematica__top {
+        padding: 30px 20px 34px;
+    }
+
+    .livros-matematica__body {
+        padding: 38px 20px 42px;
+    }
+
+    /*
+       Mobile/tablet:
+       a composição passa a ser vertical.
+    */
+
+    .livros-matematica__row {
+        display: flex;
+        flex-direction: column;
+
+        gap: 34px;
+    }
+
+    .livros-matematica__text {
+        width: 100%;
+        max-width: 500px;
+
+        text-align: center;
+    }
+
+    .livros-matematica__books {
+        width: 100%;
+    }
+
+    .livros-matematica__image {
+        height: 195px;
+        max-width: 100%;
+    }
+
+    .livros-matematica__highlight {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .livros-matematica__highlight-text {
+        max-width: 370px;
+    }
+
+    .livros-matematica__professor-image {
+        width: 100%;
+    }
+
+    .livros-matematica__highlight-image {
+        height: 190px;
+    }
+
+    .livros-matematica__banner {
+        padding: 24px;
+
+        gap: 22px;
+    }
+
+    .livros-matematica__banner-info {
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+    .livros-matematica__banner-title {
+        font-size: 20px;
+    }
+
+}
+
+
+/* ==========================================================================
+   576px
+   ========================================================================== */
+
+@media (max-width: 576px) {
+
+    .livros-matematica__top {
+        padding: 28px 16px 32px;
+    }
+
+    .livros-matematica__body {
+        padding: 34px 16px 38px;
+    }
+
+    .livros-matematica__body-inner {
+        gap: 36px;
+    }
+
+    .livros-matematica__row {
+        gap: 30px;
+    }
+
+    .livros-matematica__text {
+        max-width: 420px;
+
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .livros-matematica__image {
+        height: 185px;
+        max-width: 100%;
+    }
+
+    .livros-matematica__highlight {
+        max-width: 360px;
+    }
+
+    .livros-matematica__highlight-icon {
+        width: 64px;
+        height: 64px;
+
+        flex-basis: 64px;
+    }
+
+    .livros-matematica__highlight-icon img {
+        width: 31px;
+        height: 31px;
+    }
+
+    .livros-matematica__highlight-title {
+        font-size: 20px;
+    }
+
+    .livros-matematica__highlight-text {
+        max-width: 330px;
+
+        font-size: 14px;
+    }
+
+    .livros-matematica__highlight-image {
+        height: 180px;
+    }
+
+    .livros-matematica__banner {
+        padding: 22px 18px;
+    }
+
+    .livros-matematica__banner-title {
+        font-size: 19px;
+    }
+
+    .livros-matematica__banner-cta {
+        width: 100%;
+
+        white-space: normal;
+
+        text-align: center;
+    }
+
+}
+
+
+/* ==========================================================================
+   480px
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+    .livros-matematica__top {
+        padding: 26px 14px 30px;
+    }
+
+    .livros-matematica__body {
+        padding: 30px 14px 34px;
+    }
+
+    .livros-matematica__row {
+        gap: 28px;
+    }
+
+    .livros-matematica__text {
+        max-width: 380px;
+
+        font-size: 15px;
+    }
+
+    /*
+       A imagem continua sendo UMA única imagem.
+       Não estamos dividindo os livros.
+    */
+
+    .livros-matematica__image {
+        width: auto;
+        height: 175px;
+        max-width: 100%;
+    }
+
+    .livros-matematica__highlight {
+        max-width: 320px;
+    }
+
+    .livros-matematica__highlight-icon {
+        width: 60px;
+        height: 60px;
+
+        flex-basis: 60px;
+    }
+
+    .livros-matematica__highlight-icon img {
+        width: 29px;
+        height: 29px;
+    }
+
+    .livros-matematica__highlight-title {
+        font-size: 19px;
+    }
+
+    .livros-matematica__highlight-text {
+        max-width: 300px;
+
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .livros-matematica__highlight-image {
+        height: 170px;
+    }
+
+    .livros-matematica__banner {
+        padding: 20px 16px;
+
+        border-radius: 20px;
+    }
+
+    .livros-matematica__banner-icon {
+        width: 52px;
+        height: 52px;
+
+        flex-basis: 52px;
+    }
+
+    .livros-matematica__banner-icon img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .livros-matematica__banner-title {
+        font-size: 18px;
+    }
+
+}
+
+
+/* ==========================================================================
+   360px
+   ========================================================================== */
+
+@media (max-width: 360px) {
+
+    .livros-matematica__body {
+        padding: 26px 12px 30px;
+    }
+
+    .livros-matematica__row {
+        gap: 26px;
+    }
+
+    .livros-matematica__text {
+        max-width: 320px;
+
+        font-size: 14px;
+    }
+
+    .livros-matematica__image {
+        height: 160px;
+    }
+
+    .livros-matematica__highlight {
+        max-width: 290px;
+    }
+
+    .livros-matematica__highlight-icon {
+        width: 56px;
+        height: 56px;
+
+        flex-basis: 56px;
+    }
+
+    .livros-matematica__highlight-icon img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .livros-matematica__highlight-title {
+        font-size: 18px;
+    }
+
+    .livros-matematica__highlight-text {
+        max-width: 270px;
+
+        font-size: 13px;
+    }
+
+    .livros-matematica__highlight-image {
+        height: 155px;
+    }
+
+    .livros-matematica__banner {
+        padding: 18px 14px;
+    }
+
+    .livros-matematica__banner-title {
+        font-size: 17px;
+    }
+
+}

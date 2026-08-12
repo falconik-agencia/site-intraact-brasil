@@ -1,0 +1,111 @@
+:root {
+
+    /* ==========================================
+       TYPOGRAPHY
+    ========================================== */
+
+    --font-primary: 'Nunito', sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    --fw-black: 900;
+
+
+    /* ==========================================
+       COLORS
+    ========================================== */
+
+    /* Neutral */
+
+    --neutral-900: #000000;
+    --neutral-700: #606062;
+    --neutral-500: #a2a4a6;
+    --neutral-100: #f3f3f4;
+    --neutral-0: #ffffff;
+
+    /* Green */
+
+    --green-700: #4c774d;
+    --green-500: #6a9149;
+    --green-300: #cedc87;
+    --green-100: #f1f6df;
+
+    /* Orange */
+
+    --orange-900: #a94720;
+    --orange-700: #e26b38;
+    --orange-500: #f3ad32;
+    --orange-300: #f7d978;
+    --orange-100: #fff9ea;
+
+    /* Teal */
+
+    --teal-900: #005664;
+    --teal-700: #1e7f8c;
+    --teal-500: #5dc6cd;
+    --teal-300: #a0dae0;
+    --teal-100: #edf7f7;
+
+    /* Purple */
+
+    --purple-900: #272a6b;
+    --purple-800: #3634A1;
+    --purple-700: #6667d4;
+    --purple-300: #b2b3ea;
+    --purple-100: #e5e5f8;
+
+
+    /* ==========================================
+       LAYOUT
+    ========================================== */
+
+    --container-width: 1440px;
+    --container-padding: clamp(24px, 4vw, 120px);
+    --header-height: 150px;
+
+
+    /* ==========================================
+       BORDER RADIUS
+    ========================================== */
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-pill: 999px;
+
+
+    /* ==========================================
+       SHADOWS
+    ========================================== */
+
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, .08);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, .12);
+    --shadow-lg: 0 12px 40px rgba(0, 0, 0, .18);
+
+
+    /* ==========================================
+       TRANSITIONS
+    ========================================== */
+
+    --transition-fast: .2s ease;
+    --transition: .3s ease;
+    --transition-slow: .5s ease;
+
+
+    /* ==========================================
+       COMPONENTS
+    ========================================== */
+
+    /* Cor utilizada no hover dos botões brancos.
+       Pode ser sobrescrita por cada seção. */
+
+    --btn-hover-color: var(--teal-900);
+ 
+
+}
+

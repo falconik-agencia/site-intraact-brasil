@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Básico -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Blog | Conteúdos | IntraAct Brasil</title>
+
+    <meta name="description" content="Artigos, novidades e conteúdos sobre alfabetização, matemática e o Método IntraAct.">
+
+    <meta name="robots" content="index,follow,max-image-preview:large">
+
+    <link rel="canonical" href="https://intraactbrasil.com.br/blog.html">
+
+    <meta name="theme-color" content="#0A3A74">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+<!-- Analytics: Google Analytics + Microsoft Clarity -->
+<script defer src="/js/analytics.js"></script>
+
+</head>
+
+ 
+    <div id="header-placeholder"></div>
+ 
+    <main class="blog">
+ 
+        <!-- Hero -->
+        <section class="blog__hero">
+            <div class="container">
+                <h1>Tudo sobre alfabetização, neurociência e<br>formação de professores com o Método IntraAct.</h1>
+            </div>
+        </section>
+ 
+ 
+        <!-- Navegação -->
+        <section class="blog__navigation">
+            <div class="container">
+ 
+                <div class="blog-search">
+ 
+                    <input
+                        type="search"
+                        id="blogSearch"
+                        placeholder="Busque por um tópico">
+ 
+                    <button type="button" class="blog-search__btn" id="blogSearchBtn" aria-label="Buscar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+ 
+                </div>
+ 
+                <nav class="blog-tags" id="blogTags">
+ 
+                    <button type="button" class="blog-tags__btn is-active" data-tag="todos">Todos</button>
+                    <button type="button" class="blog-tags__btn" data-tag="alfabetizacao">Alfabetização</button>
+                    <button type="button" class="blog-tags__btn" data-tag="matematica">Matemática</button>
+                    <button type="button" class="blog-tags__btn" data-tag="gestao">Notícia</button>
+                    <button type="button" class="blog-tags__btn" data-tag="formacao">Formação</button>
+                    <button type="button" class="blog-tags__btn" data-tag="resultados">Resultados</button>
+ 
+                </nav>
+ 
+            </div>
+        </section>
+ 
+ 
+        <!-- Destaque — preenchido dinamicamente pelo js/blog.js a partir de js/blog-data.js -->
+        <section class="blog-featured">
+            <div class="blog-featured__container" id="blogFeatured"></div>
+        </section>
+ 
+ 
+        <!-- Grid de posts — preenchido dinamicamente pelo js/blog.js a partir de js/blog-data.js -->
+        <section class="blog-posts">
+            <div class="container">
+
+                <!-- Aviso de filtro por autor — mostrado apenas quando a URL
+                     tem ?autor=<id> (link "Ver todos os artigos" do autor) -->
+                <div class="blog-author-filter" id="blogAuthorFilter" hidden>
+                    <p>Mostrando artigos de <strong id="blogAuthorFilterName"></strong></p>
+                    <a href="blog.html" class="blog-author-filter__clear">Ver todas as publicações →</a>
+                </div>
+
+                <div class="blog-grid" id="blogGrid"></div>
+ 
+                <div class="blog-empty" id="blogEmpty">
+                    <p>Nenhuma publicação encontrada. Tente outro termo ou categoria.</p>
+                </div>
+ 
+                <div class="blog-load-more-wrap" id="blogLoadMoreWrap">
+                    <button type="button" class="btn-outline btn-outline--teal-solid" id="blogLoadMore">
+                        Veja mais publicações
+                    </button>
+                </div>
+ 
+            </div>
+        </section>
+ 
+    </main>
+ 
+    <div id="footer-placeholder"></div>
+ 
+    <script src="js/includes.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/blog-data.js"></script>
+    <script src="js/blog.js"></script>
+ 
+</body>
+</html>

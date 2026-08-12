@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Básico -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Contato | IntraAct Brasil</title>
+
+    <meta name="description" content="Entre em contato com a IntraAct Brasil e descubra como nossa metodologia pode fortalecer a alfabetização em sua rede de ensino.">
+
+    <meta name="robots" content="index,follow,max-image-preview:large">
+
+    <link rel="canonical" href="https://intraactbrasil.com.br/contato.html">
+
+    <meta name="theme-color" content="#0A3A74">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="IntraAct Brasil">
+    <meta property="og:title" content="Contato | IntraAct Brasil">
+    <meta property="og:description" content="Entre em contato com a IntraAct Brasil e conheça nossas soluções para alfabetização.">
+    <meta property="og:url" content="https://intraactbrasil.com.br/contato.html">
+    <meta property="og:image" content="https://intraactbrasil.com.br/assets/images/og-image.jpg">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contato | IntraAct Brasil">
+    <meta name="twitter:description" content="Entre em contato com a IntraAct Brasil e conheça nossas soluções para alfabetização.">
+    <meta name="twitter:image" content="https://intraactbrasil.com.br/assets/images/og-image.jpg">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/contato.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"IntraAct Brasil",
+      "url":"https://intraactbrasil.com.br",
+      "logo":"https://intraactbrasil.com.br/assets/images/logo.png",
+      "email":"contato@intraactbrasil.com.br",
+      "sameAs":[
+        "https://instagram.com/intraactbrasil",
+        "https://www.linkedin.com/company/intraact-brasil"
+      ]
+    }
+    </script>
+
+<!-- Analytics: Google Analytics + Microsoft Clarity -->
+<script defer src="/js/analytics.js"></script>
+
+</head>
+
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <main>
+
+<section class="contact-section" id="contato">
+
+    <div class="contact-section__container">
+
+        <div class="contact-section__header">
+            <h2 class="contact-section__title">
+                Vamos conversar sobre<br>
+                educação que gera resultado
+            </h2>
+            <div class="contact-section__deco" aria-hidden="true">
+                <img src="/assets/images/detail-contact.png" alt="">
+            </div>
+        </div>
+
+        <div class="contact-section__grid">
+
+            <!-- FORMULÁRIO -->
+            <div class="contact-card">
+                <p class="contact-card__label">Fale com um especialista</p>
+
+                <form
+                    class="contact-form"
+                    id="contact-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                >
+                    <!-- Chave de acesso do Web3Forms -->
+                    <input type="hidden" name="access_key" value="cc1fe38b-89cb-43ac-833e-581bbfb1ea05">
+
+                    <!-- Assunto do e-mail de notificação -->
+                    <input type="hidden" name="subject" value="Novo contato via site IntraAct Brasil">
+
+                    <div class="contact-form__row">
+                        <div class="contact-form__field">
+                            <label for="nome">Nome completo*</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__row">
+                        <div class="contact-form__field">
+                            <label for="telefone">Telefone (opcional)</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="organizacao">Organização / Rede de ensino*</label>
+                            <input type="text" id="organizacao" name="organizacao" required>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__field contact-form__field--full">
+                        <label for="mensagem">Mensagem*</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+
+                    <!-- Honeypot anti-spam do Web3Forms (deixe escondido, não remover) -->
+                    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+                    <button type="submit" class="btn-outline btn-outline--orange contact-form__submit">
+                        <span class="contact-form__submit-text">FALE COM UM ESPECIALISTA →</span>
+                        <span class="contact-form__submit-loading" hidden>ENVIANDO...</span>
+                    </button>
+
+                    <p class="contact-form__feedback" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <!-- INFO LATERAL -->
+            <aside class="contact-info">
+
+                <div class="contact-info__block">
+                    <div class="contact-info__heading">
+                        <span class="contact-info__icon">
+                            <img src="/assets/icons/icon-atendimento.svg" alt="" width="24" height="24">
+                        </span>
+                        <h3>Atendimento</h3>
+                    </div>
+                    <p class="contact-info__text">
+                        Atendimento nacional. Projetos em redes públicas e privadas de ensino.
+                    </p>
+                </div>
+
+                <div class="contact-info__block">
+                    <div class="contact-info__heading">
+                        <span class="contact-info__icon">
+                            <img src="/assets/icons/icon-fale-conosco.svg" alt="" width="24" height="24">
+                        </span>
+                        <h3>Fale conosco</h3>
+                    </div>
+                    <p class="contact-info__text">
+                        <a href="mailto:contato@intraactbrasil.com.br">contato@intraactbrasil.com.br</a><br>
+                        <a href="tel:+5531991298190">(31) 99129-8190</a>
+                    </p>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/includes.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/lazyload.js"></script>
+  <script src="js/contact-form.js?v=3"></script>
+
+</body>
+</html>

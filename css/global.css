@@ -1,0 +1,77 @@
+/* ====================================
+   ESTILOS GLOBAIS
+   ==================================== */
+
+body {
+    font-family: var(--font-primary);
+    color: var(--neutral-700);
+    background-color: var(--neutral-0);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+    color: var(--neutral-900);
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+section {
+    position: relative;
+}
+
+.container {
+    width: min(
+        100% - (var(--container-padding) * 2),
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+}
+
+/* ====================================
+   UTILITÁRIOS
+   ==================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-teal {
+    color: var(--teal-500);
+}
+
+.text-orange {
+    color: var(--orange-700);
+}
+
+.bg-teal-light {
+    background-color: var(--teal-100);
+}
+
+.bg-orange-light {
+    background-color: var(--orange-100);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+

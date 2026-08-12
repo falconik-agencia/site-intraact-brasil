@@ -1,0 +1,266 @@
+/* ========================================================================
+   COMPONENTS.CSS
+   Componentes reutilizáveis
+======================================================================== */
+
+
+/* ====================================
+TAG PILL
+==================================== */
+
+.tag-pill {
+    display: inline-block;
+    padding: clamp(5px, .5vw, 8px) clamp(12px, 1vw, 18px);
+
+    border-radius: var(--radius-pill);
+
+    font-family: var(--font-primary);
+    font-weight: var(--fw-bold);
+    font-size: clamp(14px, 1vw, 18px);
+    line-height: 1.2;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+.tag-pill--indigo {
+    background: #3735A2;
+    color: #FFF;
+}
+
+
+.tag-pill--orange {
+    background: #F3AD32;
+    color: #272A6B;
+}
+
+
+.tag-pill--yellow {
+    background: #F7D978;
+    color: #272A6B;
+}
+
+
+.tag-pill--periwinkle {
+    background: #6667D4;
+    color: #FFF;
+}
+
+
+.tag-pill--cream {
+    background: #FFF9EA;
+    color: #272A6B;
+}
+
+
+.tag-pill--teal {
+    background: var(--teal-700);
+    color: var(--neutral-0);
+}
+
+
+.tag-pill--lavender {
+    background: #E5E5F8;
+    color: #3735A2;
+}
+
+
+/* ====================================
+BTN PRIMARY
+==================================== */
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: min(320px, 100%);
+    min-height: 50px;
+
+    padding: 0 clamp(18px, 2vw, 28px);
+
+    border: none;
+    border-radius: 999px;
+
+    /* Teal claro + teal escuro */
+    background: var(--teal-500);
+    color: var(--teal-900);
+
+    text-decoration: none;
+
+    font-family: var(--font-primary);
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: var(--fw-bold);
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--teal-700);
+    color: var(--neutral-0);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.18);
+}
+
+.btn-primary:active {
+    background: var(--teal-900);
+    color: var(--neutral-0);
+
+    transform: translateY(0);
+}
+
+.btn-primary:focus-visible {
+    outline: 2px solid var(--neutral-0);
+    outline-offset: 4px;
+}
+
+
+/* ====================================
+BTN OUTLINE
+==================================== */
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: fit-content;
+    max-width: 100%;
+
+    padding: clamp(10px,.9vw,14px)
+             clamp(18px,2vw,28px);
+
+    border: 2px solid transparent;
+    border-radius: 999px;
+
+    background: transparent;
+
+    font-family: var(--font-primary);
+    font-size: clamp(14px,1vw,18px);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-outline:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
+
+/* ===== VARIANTES ===== */
+
+.btn-outline--teal {
+    border-color: #FFF;
+    color: #FFF;
+}
+
+.btn-outline--teal:hover,
+.btn-outline--teal:focus-visible {
+    background: #FFF;
+    color: #005664;
+}
+
+
+.btn-outline--indigo {
+    border-color: #FFF;
+    color: #FFF;
+}
+
+.btn-outline--indigo:hover,
+.btn-outline--indigo:focus-visible {
+    background: #FFF;
+    color: #272A6B;
+}
+
+
+/* Gold
+   Texto escuro para garantir contraste */
+.btn-outline--gold {
+    border-color: #8A5A00;
+    color: #8A5A00;
+}
+
+.btn-outline--gold:hover,
+.btn-outline--gold:focus-visible {
+    background: #F3AD32;
+    color: #272A6B;
+}
+
+
+/* Teal solid
+   Texto escuro sobre fundo claro */
+.btn-outline--teal-solid {
+    border-color: #005664;
+    color: #005664;
+}
+
+.btn-outline--teal-solid:hover,
+.btn-outline--teal-solid:focus-visible {
+    background: #005664;
+    color: #FFF;
+}
+
+
+.btn-outline--orange {
+    border-color: #E26B38;
+    color: #E26B38;
+}
+
+.btn-outline--orange:hover,
+.btn-outline--orange:focus-visible {
+    background: #E26B38;
+    color: #FFF;
+}
+
+
+.btn-outline--periwinkle {
+    border-color: #FFF;
+    color: #FFF;
+}
+
+.btn-outline--periwinkle:hover,
+.btn-outline--periwinkle:focus-visible {
+    background: #FFF;
+    color: #272A6B;
+}
+
+
+/* ====================================
+RESPONSIVIDADE
+==================================== */
+
+@media (max-width:1024px) {
+
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .btn-primary,
+    .btn-outline {
+        max-width: 100%;
+        min-height: 44px;
+    }
+
+    .tag-pill {
+        white-space: normal;
+        text-align: center;
+    }
+
+}
