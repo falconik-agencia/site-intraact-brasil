@@ -2522,6 +2522,612 @@
 
 }
 
+
+/* ========================================================================
+   RESULTADOS — VÍDEOS
+   ======================================================================== */
+
+.resultados-videos {
+    position: relative;
+    width: 100%;
+    padding: clamp(80px, 8vw, 140px) 0;
+    background: var(--neutral-0);
+    overflow: hidden;
+}
+
+.resultados-videos__container {
+    width: min(
+        var(--container-width),
+        calc(100% - (var(--container-padding) * 2))
+    );
+    margin: 0 auto;
+}
+
+
+/* ========================================================================
+   BLOCO SUPERIOR
+   ======================================================================== */
+
+.resultados-videos__top {
+    display: grid;
+    grid-template-columns:
+        minmax(280px, 0.8fr)
+        minmax(500px, 1.2fr);
+    gap: clamp(40px, 6vw, 100px);
+    align-items: center;
+}
+
+
+/* ========================================================================
+   INTRO
+   ======================================================================== */
+
+.resultados-videos__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(12px, 1.5vw, 24px);
+}
+
+.resultados-videos__title {
+    margin: 0;
+    color: var(--purple-900);
+    font-family: var(--font-primary);
+    font-size: clamp(40px, 4.5vw, 72px);
+    font-weight: var(--fw-extrabold);
+    line-height: 0.98;
+}
+
+.resultados-videos__description {
+    max-width: 540px;
+    margin: clamp(20px, 2vw, 30px) 0 0;
+    color: var(--neutral-700);
+    font-family: var(--font-primary);
+    font-size: clamp(16px, 1.2vw, 20px);
+    font-weight: var(--fw-regular);
+    line-height: 1.6;
+}
+
+.resultados-videos__description strong {
+    color: var(--purple-900);
+    font-weight: var(--fw-bold);
+}
+
+
+/* ========================================================================
+   INDICADORES
+   ======================================================================== */
+
+.resultados-videos__highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 540px;
+    margin-top: clamp(30px, 3vw, 48px);
+    gap: clamp(16px, 2vw, 30px);
+}
+
+.resultados-videos__highlight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--purple-900);
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+}
+
+.resultados-videos__highlight img {
+    flex-shrink: 0; 
+    width: 56px;
+    height: 56px;
+    display: block; 
+}
+
+
+/* ========================================================================
+   VÍDEO DESTAQUE
+   ======================================================================== */
+
+.resultados-videos__featured {
+    width: 100%;
+}
+
+.resultados-videos__featured-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.resultados-videos__media {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: var(--radius-xl);
+    background: var(--purple-900);
+    box-shadow: var(--shadow-md);
+}
+
+.resultados-videos__featured-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.resultados-videos__featured-link:hover
+.resultados-videos__featured-image {
+    transform: scale(1.03);
+}
+
+
+/* ========================================================================
+   OVERLAY DO DESTAQUE
+   ======================================================================== */
+
+.resultados-videos__overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(39, 42, 107, 0) 20%,
+            rgba(39, 42, 107, 0.08) 40%,
+            rgba(39, 42, 107, 0.82) 100%
+        );
+}
+
+
+/* ========================================================================
+   PLAY DO DESTAQUE
+   ======================================================================== */
+
+.resultados-videos__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(58px, 5vw, 82px);
+    height: clamp(58px, 5vw, 82px);
+    border-radius: 50%;
+    background: var(--neutral-0);
+    transform: translate(-50%, -50%);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition);
+}
+
+.resultados-videos__featured-link:hover
+.resultados-videos__play {
+    transform: translate(-50%, -50%) scale(1.08);
+}
+
+.resultados-videos__play span {
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid var(--purple-900);
+}
+
+
+/* ========================================================================
+   CONTEÚDO DO DESTAQUE
+   ======================================================================== */
+
+.resultados-videos__featured-content {
+    position: absolute;
+    right: clamp(20px, 3vw, 44px);
+    bottom: clamp(20px, 3vw, 40px);
+    left: clamp(20px, 3vw, 44px);
+    z-index: 2;
+}
+
+.resultados-videos__featured-content .tag-pill {
+    margin-bottom: 12px;
+}
+
+.resultados-videos__featured-title {
+    max-width: 700px;
+    margin: 0;
+    color: var(--neutral-0);
+    font-family: var(--font-primary);
+    font-size: clamp(22px, 2.4vw, 38px);
+    font-weight: var(--fw-extrabold);
+    line-height: 1.05;
+}
+
+.resultados-videos__featured-subtitle {
+    margin: 8px 0 0;
+    color: var(--neutral-0);
+    font-family: var(--font-primary);
+    font-size: clamp(14px, 1vw, 18px);
+    font-weight: var(--fw-medium);
+    line-height: 1.4;
+}
+
+
+/* ========================================================================
+   DURAÇÃO DO DESTAQUE
+   ======================================================================== */
+
+.resultados-videos__duration {
+    position: absolute;
+    top: clamp(16px, 2vw, 28px);
+    right: clamp(16px, 2vw, 28px);
+    z-index: 3;
+    padding: 5px 9px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--neutral-0);
+    font-family: var(--font-primary);
+    font-size: 12px;
+    font-weight: var(--fw-bold);
+    line-height: 1;
+}
+
+
+/* ========================================================================
+   VÍDEOS MAIS RECENTES
+   ======================================================================== */
+
+.resultados-videos__latest {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(18px, 2vw, 30px);
+    width: 100%;
+    margin-top: clamp(30px, 4vw, 56px);
+}
+
+
+/* ========================================================================
+   CARD DOS VÍDEOS RECENTES
+   ======================================================================== */
+
+.resultados-videos__card {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+.resultados-videos__card-media {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    background: var(--neutral-100);
+    box-shadow: var(--shadow-sm);
+}
+
+.resultados-videos__card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+.resultados-videos__card:hover
+.resultados-videos__card-image {
+    transform: scale(1.04);
+}
+
+
+/* ========================================================================
+   OVERLAY DOS CARDS
+   ======================================================================== */
+
+.resultados-videos__card-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(39, 42, 107, 0) 45%,
+            rgba(39, 42, 107, 0.35) 100%
+        );
+}
+
+
+/* ========================================================================
+   PLAY DOS CARDS
+   ======================================================================== */
+
+.resultados-videos__card-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(46px, 4vw, 62px);
+    height: clamp(46px, 4vw, 62px);
+    border-radius: 50%;
+    background: var(--neutral-0);
+    transform: translate(-50%, -50%);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition);
+}
+
+.resultados-videos__card:hover
+.resultados-videos__card-play {
+    transform: translate(-50%, -50%) scale(1.08);
+}
+
+.resultados-videos__card-play span {
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid var(--purple-900);
+}
+
+
+/* ========================================================================
+   CTA
+   ======================================================================== */
+
+.resultados-videos__cta {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: clamp(24px, 3vw, 50px);
+    margin-top: clamp(40px, 5vw, 72px);
+    padding: clamp(28px, 4vw, 52px);
+    border-radius: var(--radius-xl);
+    background: var(--purple-700);
+}
+
+.resultados-videos__cta-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+}
+
+.resultados-videos__cta-content {
+    min-width: 0;
+}
+
+.resultados-videos__cta-title {
+    margin: 0;
+    color: var(--neutral-0);
+    font-family: var(--font-primary);
+    font-size: clamp(28px, 2vw, 36px);
+    font-weight: var(--fw-extrabold);
+    line-height: 1.1;
+}
+
+.resultados-videos__cta-description {
+    max-width: 620px;
+    margin: 8px 0 0;
+    color: var(--neutral-0);
+    font-family: var(--font-primary);
+    font-size: clamp(18px, 1vw, 24px);
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.resultados-videos__cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-height: 50px;
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    background: var(--neutral-0);
+    color: var(--purple-900);
+    font-family: var(--font-primary);
+    font-size: clamp(13px, 0.95vw, 16px);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition:
+        background var(--transition),
+        color var(--transition),
+        transform var(--transition);
+}
+
+.resultados-videos__cta-button:hover {
+    background: var(--teal-500);
+    color: var(--teal-900);
+    transform: translateY(-2px);
+}
+
+
+/* ========================================================================
+   TABLET
+   ======================================================================== */
+
+@media (max-width: 1024px) {
+
+    .resultados-videos__top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .resultados-videos__intro {
+        max-width: 760px;
+    }
+
+    .resultados-videos__description {
+        max-width: 680px;
+    }
+
+    .resultados-videos__highlights {
+        max-width: 680px;
+    }
+
+    .resultados-videos__cta {
+        grid-template-columns: auto 1fr;
+    }
+
+    .resultados-videos__cta-button {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+}
+
+
+/* ========================================================================
+   MOBILE
+   ======================================================================== */
+
+@media (max-width: 768px) {
+
+    .resultados-videos {
+        padding: 70px 0;
+    }
+
+    .resultados-videos__container {
+        width: min(
+            calc(100% - 40px),
+            var(--container-width)
+        );
+    }
+
+    .resultados-videos__title {
+        font-size: clamp(38px, 11vw, 56px);
+    }
+
+    .resultados-videos__highlights {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .resultados-videos__highlight {
+        font-size: 15px;
+    }
+
+
+    /* ---------------------------------------------------------------
+       DESTAQUE
+       --------------------------------------------------------------- */
+
+    .resultados-videos__media {
+        border-radius: var(--radius-lg);
+    }
+
+    .resultados-videos__featured-content {
+        right: 20px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .resultados-videos__featured-title {
+        font-size: clamp(20px, 6vw, 28px);
+    }
+
+    .resultados-videos__featured-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* ---------------------------------------------------------------
+       VÍDEOS RECENTES
+       --------------------------------------------------------------- */
+
+    .resultados-videos__latest {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .resultados-videos__card-media {
+        border-radius: var(--radius-md);
+    }
+
+
+    /* ---------------------------------------------------------------
+       CTA
+       --------------------------------------------------------------- */
+
+    .resultados-videos__cta {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 24px;
+        text-align: center;
+    }
+
+    .resultados-videos__cta-icon {
+        margin: 0 auto;
+    }
+
+    .resultados-videos__cta-button {
+        width: 100%;
+        white-space: normal;
+    }
+}
+
+
+/* ========================================================================
+   MOBILE PEQUENO
+   ======================================================================== */
+
+@media (max-width: 480px) {
+
+    .resultados-videos__container {
+        width: min(
+            calc(100% - 32px),
+            var(--container-width)
+        );
+    }
+
+
+    /* ---------------------------------------------------------------
+       DESTAQUE
+       --------------------------------------------------------------- */
+
+    .resultados-videos__featured-content .tag-pill {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .resultados-videos__featured-title {
+        font-size: 19px;
+    }
+
+    .resultados-videos__featured-subtitle {
+        display: none;
+    }
+
+    .resultados-videos__play {
+        width: 54px;
+        height: 54px;
+    }
+
+    .resultados-videos__play span {
+        border-top-width: 8px;
+        border-bottom-width: 8px;
+        border-left-width: 12px;
+    }
+
+
+    /* ---------------------------------------------------------------
+       CTA
+       --------------------------------------------------------------- */
+
+    .resultados-videos__cta-title {
+        font-size: 23px;
+    }
+}
+
+
+
 /* ==========================================================================
    BLOG HOME
    ========================================================================== */
